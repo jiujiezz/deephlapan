@@ -1,0 +1,14 @@
+#!/usr/bin/python
+
+from deephlapan.deephlapan_main import *
+from deephlapan.parse_args import *
+
+
+def main():
+    (opt,_)=CommandLineParser()
+    deephlapan_main(opt)
+
+
+if __name__ == '__main__':
+    main()
+
