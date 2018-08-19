@@ -8,7 +8,7 @@ predcited results,researchers could identify potential neoantigens for tumor imm
 
 Download the latest version of DeepHLApan from https://github.com/jiujiezz/deephlapan
     
-    git clone https://github.com/jiujiezz/deephlapan
+    git clone https://github.com/jiujiezz/deephlapan.git
 
 ## Installation
 
