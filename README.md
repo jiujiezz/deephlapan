@@ -1,4 +1,4 @@
-# deephlapan
+# DeepHLApan
 
 DeepHLApan is a deep learning approach used for predicting binding affinity and level between peptides and HLA alleles. Based on the 
 predcited results,researchers could identify potential neoantigens for tumor immunotherapy.
