@@ -2,8 +2,12 @@
 
 A deep learning approach for predicting binding level between peptides and HLA Class I alleles
 
-Download the latest version of DeepHLApan from https://github.com/jiujiezz/deephlapan
 
+## Download
+
+Download the latest version of DeepHLApan from https://github.com/jiujiezz/deephlapan
+    
+    git clone https://github.com/jiujiezz/deephlapan
 
 ## Installation
 
