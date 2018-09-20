@@ -1,7 +1,6 @@
 # DeepHLApan
 
-DeepHLApan is a deep learning approach used for predicting binding affinity and level between peptides and HLA alleles. Based on the 
-predcited results,researchers could identify potential neoantigens for tumor immunotherapy.
+   DeepHLApan is a deep learning approach used for predicting binding affinity and level between peptides and HLA alleles. Based on the predcited results,researchers could identify potential neoantigens for tumor immunotherapy.
 
 
 ## Download
@@ -20,7 +19,7 @@ Unzip the source code and go into the directory by using the following command:
 
 Invoke the setup script:
 
-    python setup.py install
+    sudo python setup.py install
 
 
 ## General usage
@@ -35,7 +34,7 @@ List of peptides and HLA alleles in a file:
 
 ## Input files
 
-DeepHLApan takes csv files as input with head of "Annotation,HLA,peptide".
+DeepHLApan takes csv files as input with head of "Annotation,HLA,peptide" (requisite).
 
 For example (demo/1.csv):
     
