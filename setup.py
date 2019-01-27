@@ -33,7 +33,7 @@ def main():
     setup(name=NAME,
         version=VERSION,
         description='Used for predicting high-confidence neoantigens',
-        long_description=open('README.rst').read(),
+        long_description=open('README.md').read(),
         author='Jingcheng Wu',
         author_email='21619014@zju.edu.cn',
         url='https://github.com/',
