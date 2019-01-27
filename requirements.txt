@@ -1,7 +1,0 @@
-numpy
-pandas
-keras ==2.1.6
-gensim
-scipy
-sklearn
-tensorflow
