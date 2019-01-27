@@ -32,11 +32,11 @@ model = path_files(NAME)
 def main():
     setup(name=NAME,
         version=VERSION,
-        description='Used for predicting the binding between peptides and HLA alleles',
+        description='Used for predicting high-confidence neoantigens',
         long_description=open('README.md').read(),
         author='Jingcheng Wu',
         author_email='21619014@zju.edu.cn',
-        url='https://github.com/jiujiezz/deephlapan.git',
+        url='https://github.com/',
         packages=PACKAGE,
         package_dir={NAME: NAME},
         package_data={NAME: model},

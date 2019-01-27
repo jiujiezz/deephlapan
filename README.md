@@ -1,6 +1,6 @@
 # DeepHLApan
 
-   DeepHLApan is a deep learning approach used for predicting binding affinity and level between peptides and HLA alleles. Based on the predcited results,researchers could identify potential neoantigens for tumor immunotherapy.
+   DeepHLApan is a deep learning approach used for predicting high-confidence neoantigens by considering both the presentation possibilities of mutant peptides and the potential immunogenicity of pMHC.
 
 
 ## Download
@@ -34,25 +34,24 @@ List of peptides and HLA alleles in a file:
 
 ## Input files
 
-DeepHLApan takes csv files as input with head of "Annotation,HLA,peptide" (requisite).
+DeepHLApan takes csv files as input with head of "Annotation,HLA,peptide" (requisite). 
+It supports to rank the HLA-peptide pairs if all the mutant peptides belong to one sample. 
 
 For example (demo/1.csv):
     
-    Annotation,HLA,peptide
-    1,HLA-B15:02,FPYGTTVTY
-    2,HLA-B15:02,APPPPPPGH
-    3,HLA-B15:02,APPPPPPPP
-    4,HLA-B15:02,SQFGGGSQY
-    5,HLA-B15:02,YLYGQTTTY
-    6,HLA-B15:02,EQYEQILAF
-    7,HLA-B15:02,SLFVSNHAY
-    8,HLA-B15:02,NVIRDAVTY
-    9,HLA-B15:02,FVPPPPPPP
-    10,HLA-B15:02,FLFDGSPTY
-    11,HLA-B15:02,ELWKNPTAF
-    12,HLA-B15:02,TILDSSSSF
-    13,HLA-B15:02,QLGPVGGVF
-    14,HLA-B15:02,SVKPASSSF
+      Annotation,HLA,peptide
+      NCI-3784,HLA-A01:01,MKRFVQWL
+      NCI-3784,HLA-A03:01,MKRFVQWL
+      NCI-3784,HLA-B07:02,MKRFVQWL
+      NCI-3784,HLA-B07:02,MKRFVQWL
+      NCI-3784,HLA-C07:02,MKRFVQWL
+      NCI-3784,HLA-C07:02,MKRFVQWL
+      NCI-3784,HLA-A01:01,KRFVQWLK
+      NCI-3784,HLA-A03:01,KRFVQWLK
+      NCI-3784,HLA-B07:02,KRFVQWLK
+      NCI-3784,HLA-B07:02,KRFVQWLK
+      NCI-3784,HLA-C07:02,KRFVQWLK
+      NCI-3784,HLA-C07:02,KRFVQWLK
  
  The content in Annotation can be defined as users.
  
