@@ -53,5 +53,5 @@ For example (demo/1.csv):
       NCI-3784,HLA-C07:02,KRFVQWLK
       NCI-3784,HLA-C07:02,KRFVQWLK
  
- The content in Annotation can be defined as users.
+ The content in Annotation can be changed as users wanted.
  
