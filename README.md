@@ -1,7 +1,12 @@
 # deephlapan
 
    DeepHLApan is a deep learning approach used for predicting high-confidence neoantigens by considering both the presentation possibilities of mutant peptides and the potential immunogenicity of pMHC.
-
+   
+# implemention
+   
+perl 5
+python 2.7
+Linux
 
 ## Download
 
