@@ -14,6 +14,11 @@ Download the latest version of DeepHLApan from https://github.com/jiujiezz/deeph
     
     git clone https://github.com/jiujiezz/deephlapan.git
 
+## requirement
+
+cuda 9 https://developer.nvidia.com/cuda-90-download-archive
+cudnn 7 https://developer.nvidia.com/rdp/cudnn-archive
+
 ## Installation
 
 Unzip the source code and go into the directory by using the following command:
