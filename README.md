@@ -1,8 +1,8 @@
-# deephlapan
+# DeepHLApan
 
    DeepHLApan is a deep learning approach used for predicting high-confidence neoantigens by considering both the presentation possibilities of mutant peptides and the potential immunogenicity of pMHC.
    
-# implemention
+# Implemention
    
 perl 5  
 python 2.7  
@@ -14,7 +14,7 @@ Download the latest version of DeepHLApan from https://github.com/jiujiezz/deeph
     
     git clone https://github.com/jiujiezz/deephlapan.git
 
-## requirement
+## Requirement
 
 [cuda 9](https://developer.nvidia.com/cuda-90-download-archive)  
 [cudnn 7](https://developer.nvidia.com/rdp/cudnn-archive)
