@@ -19,8 +19,8 @@ There are two ways to installtion the DeepHLApan.
 Linux
 
 ### Dependencies
-perl
-python
+perl    
+python    
 [cuda 9](https://developer.nvidia.com/cuda-90-download-archive)  
 [cudnn 7](https://developer.nvidia.com/rdp/cudnn-archive)
 
@@ -41,7 +41,7 @@ Invoke the setup script:
     sudo python setup.py install
 
 
-## General usage
+# General usage
 
 Single peptide and HLA:
 
@@ -51,7 +51,7 @@ List of peptides and HLA alleles in a file:
 
     deephlapan -F [file] -O [output directory]  
 
-## Input files
+# Input files
 
 DeepHLApan takes csv files as input with head of "Annotation,HLA,peptide" (requisite). 
 It supports to rank the HLA-peptide pairs if all the mutant peptides belong to one sample. 
