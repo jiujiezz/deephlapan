@@ -1,26 +1,35 @@
 # DeepHLApan
 
    DeepHLApan is a deep learning approach used for predicting high-confidence neoantigens by considering both the presentation possibilities of mutant peptides and the potential immunogenicity of pMHC.
-   
-# Implemention
-   
-perl 5  
-python 2.7  
-Linux  
 
-## Download
+
+# Download and installation
+
+There are two ways to installtion the DeepHLApan.
+
+## 1.Docker (Recommend)
+
+      docker pull wujingcheng/deephlapan:v1.1
+      
+      docker run -it --rm wujingcheng/deephlapan:v1.1 bash
+
+## 2.Git (All the dependencies should be properly installed)
+
+### System
+Linux
+
+### Dependencies
+perl
+python
+[cuda 9](https://developer.nvidia.com/cuda-90-download-archive)  
+[cudnn 7](https://developer.nvidia.com/rdp/cudnn-archive)
+
+### Steps
 
 Download the latest version of DeepHLApan from https://github.com/jiujiezz/deephlapan
     
     git clone https://github.com/jiujiezz/deephlapan.git
-
-## Requirement
-
-[cuda 9](https://developer.nvidia.com/cuda-90-download-archive)  
-[cudnn 7](https://developer.nvidia.com/rdp/cudnn-archive)
-
-## Installation
-
+    
 Unzip the source code and go into the directory by using the following command:
 
     tar xvzf deephlapan-*.tar.gz
