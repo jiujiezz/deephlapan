@@ -57,7 +57,7 @@ List of peptides and HLA alleles in a file:
 
 # Input files
 
-DeepHLApan takes #csv files as input with head of "Annotation,HLA,peptide" (requisite). 
+## DeepHLApan takes csv files as input with head of "Annotation,HLA,peptide" (requisite). 
 It supports to rank the HLA-peptide pairs if all the mutant peptides belong to one sample. 
 
 For example (demo/1.csv):
