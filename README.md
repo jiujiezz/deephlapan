@@ -9,8 +9,12 @@ There are two ways to installtion the DeepHLApan.
 
 ## 1.Docker (Recommend)
 
+Pull the image of deephlapan from dockerhub:
+
       docker pull wujingcheng/deephlapan:v1.1
-      
+
+run the image in bash mode:
+
       docker run -it --rm wujingcheng/deephlapan:v1.1 bash
 
 ## 2.Git (All the dependencies should be properly installed)
