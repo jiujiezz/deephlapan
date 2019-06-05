@@ -1,26 +1,41 @@
 # DeepHLApan
 
    DeepHLApan is a deep learning approach used for predicting high-confidence neoantigens by considering both the presentation possibilities of mutant peptides and the potential immunogenicity of pMHC.
-   
-# Implemention
-   
-perl 5  
-python 2.7  
-Linux  
 
-## Download
+
+# Download and installation
+
+There are two ways to installtion the DeepHLApan.
+
+## 1.Docker (Recommend)
+
+The Installation of Docker (v18.09) can be seen in https://docs.docker.com/
+
+Pull the image of deephlapan from dockerhub:
+
+      sudo docker pull wujingcheng/deephlapan:v1.1
+
+run the image in bash mode:
+
+      sudo docker run -it --rm wujingcheng/deephlapan:v1.1 bash
+
+## 2.Git (All the dependencies should be properly installed)
+
+### System
+Linux
+
+### Dependencies
+perl    
+python    
+[cuda 9](https://developer.nvidia.com/cuda-90-download-archive)  
+[cudnn 7](https://developer.nvidia.com/rdp/cudnn-archive)
+
+### Steps
 
 Download the latest version of DeepHLApan from https://github.com/jiujiezz/deephlapan
     
     git clone https://github.com/jiujiezz/deephlapan.git
-
-## Requirement
-
-[cuda 9](https://developer.nvidia.com/cuda-90-download-archive)  
-[cudnn 7](https://developer.nvidia.com/rdp/cudnn-archive)
-
-## Installation
-
+    
 Unzip the source code and go into the directory by using the following command:
 
     tar xvzf deephlapan-*.tar.gz
@@ -32,7 +47,7 @@ Invoke the setup script:
     sudo python setup.py install
 
 
-## General usage
+# General usage
 
 Single peptide and HLA:
 
@@ -42,9 +57,9 @@ List of peptides and HLA alleles in a file:
 
     deephlapan -F [file] -O [output directory]  
 
-## Input files
+# Input files
 
-DeepHLApan takes csv files as input with head of "Annotation,HLA,peptide" (requisite). 
+DeepHLApan takes **csv** files as input with head of **"Annotation,HLA,peptide"** (requisite).    
 It supports to rank the HLA-peptide pairs if all the mutant peptides belong to one sample. 
 
 For example (demo/1.csv):
