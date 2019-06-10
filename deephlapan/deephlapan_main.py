@@ -66,7 +66,7 @@ def deephlapan_main(opt):
 	result = np.average(predScores, axis=0)
 	result1 = np.average(predScores1, axis=0)
 				
-	with open(WD + '/' + fname + '_predcited_result.csv','w') as f:
+	with open(WD + '/' + fname + '_predicted_result.csv','w') as f:
 		f.write('Annotation,HLA,Peptide,binding score,immunogenic score\n')
 		if (opt.file):
 			for i in range(len(result)):
@@ -75,7 +75,7 @@ def deephlapan_main(opt):
 			f.write('single peptide,' + str(hla) + ',' + str(peptide) + ',' + str(result[0]) + ',' + str(result1[0]) + '\n')
 	f.close()
 	if (opt.file):
-		command = 'perl ' + curDir + '/model/rank.pl ' + WD + '/' + fname + '_predcited_result.csv'
+		command = 'perl ' + curDir + '/model/rank.pl ' + WD + '/' + fname + '_predicted_result.csv'
 		os.system(command)
 	j = datetime.datetime.now()
 	print (str(j) + ' Prediction end\n')
