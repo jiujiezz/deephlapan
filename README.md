@@ -5,7 +5,7 @@
 
 # Download and installation
 
-There are two ways to installtion the DeepHLApan.
+There are two ways to installation the DeepHLApan.
 
 ## 1.Docker (Recommend)
 
