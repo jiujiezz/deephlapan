@@ -83,13 +83,14 @@ For example (demo/1.csv):
  
  
  # Update log
- V1.1.1
+ ## 2019.12
+ V1.1.1    
  Improve the prediction speed
  ## 2019.03
- V1.1
+ V1.1    
  Add the function of immunogeneicity prediction
  
  ## 2018.07
- V1.0
+ V1.0    
  Test the suitabilty of different RNN variants (GRU,LSTM,BGRU,BLSTM,att-BGRU and att-BLSTM) on the binding prediction and select the best (att-BGRU) one for model construction.
  
