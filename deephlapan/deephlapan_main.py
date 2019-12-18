@@ -11,7 +11,6 @@ from keras import initializers
 from keras.models import load_model
 from keras.utils.generic_utils import CustomObjectScope
 from attention import Attention
-from keras_ordered_neurons import ONLSTM
 import multiprocessing as mp
 
 os.environ['CUDA_VISIBLE_DEVICES']='-1'
