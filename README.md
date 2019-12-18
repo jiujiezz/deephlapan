@@ -35,7 +35,7 @@ python
 
 Download the latest version of DeepHLApan from https://github.com/jiujiezz/deephlapan
     
-    git clone https://github.com/jiujiezz/deephlapan.git
+    git clone https://github.com/jiujiezz/deephlapan.git --depth=1
     
 Unzip the source code and go into the directory by using the following command:
 
