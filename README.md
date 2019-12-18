@@ -6,7 +6,7 @@
 
 # Download and installation
 
-There are two ways to installation the DeepHLApan.
+There are two ways to install the DeepHLApan.
 
 ## 1.Docker (Recommend)
 
@@ -14,7 +14,7 @@ The Installation of Docker (v18.09) can be seen in https://docs.docker.com/
 
 Pull the image of deephlapan from dockerhub:
 
-      sudo docker pull wujingcheng/deephlapan:v1.1
+      sudo docker pull wujingcheng/deephlapan:v1.1  
 
 run the image in bash mode:
 
@@ -35,7 +35,7 @@ python
 
 Download the latest version of DeepHLApan from https://github.com/jiujiezz/deephlapan
     
-    git clone https://github.com/jiujiezz/deephlapan.git
+    git clone https://github.com/jiujiezz/deephlapan.git --depth=1
     
 Unzip the source code and go into the directory by using the following command:
 
@@ -80,4 +80,16 @@ For example (demo/1.csv):
       NCI-3784,HLA-C07:02,KRFVQWLK
  
  The content in Annotation can be changed as users wanted.
+ 
+ 
+ # Update log
+ V1.1.1
+ Improve the prediction speed
+ ## 2019.03
+ V1.1
+ Add the function of immunogeneicity prediction
+ 
+ ## 2018.07
+ V1.0
+ Test the suitabilty of different RNN variants (GRU,LSTM,BGRU,BLSTM,att-BGRU and att-BLSTM) on the binding prediction and select the best (att-BGRU) one for model construction.
  
