@@ -94,20 +94,18 @@ def deephlapan_main(opt):
     pool.join()
     result = np.average(predScores, axis=0)
     result1 = np.average(predScores1, axis=0)
-    with open(WD + '/' + fname + '_predicted_result.txt','w') as f:
-        f.write('Annotation\tHLA\tPeptide\tbinding score\timmunogenic score\n')
+    with open(WD + '/' + fname + '_predicted_result.csv','w') as f:
+        f.write('Annotation,HLA,Peptide,binding score,immunogenic score\n')
         if (opt.file):
             for i in range(len(result)):
                 result[i]=("%.4f" % result[i])
                 result1[i]=("%.4f" % result1[i])
-                f.write(str(df.Annotation[i]) + '\t' + str(df.HLA[i]) + '\t' + str(df.peptide[i]) + '\t' + str(result[i]) + '\t' + str(result1[i]) + '\n')
-                #f.write(str(df.Annotation[i]) + '\t' + str(df.HLA[i]) + '\t' + str(df.peptide[i]) + '\t' + str(result[i]) + '\n')
+                f.write(str(df.Annotation[i]) + ',' + str(df.HLA[i]) + ',' + str(df.peptide[i]) + ',' + str(result[i]) + ',' + str(result1[i]) + '\n')
         else:
-            #f.write('single peptide\t' + str(hla) + '\t' + str(peptide) + '\t' + str(result) + '\t' + str(result1) + '\n')
-            f.write('single peptide\t' + str(hla) + '\t' + str(peptide) + '\t' + str(result[0]) + '\t' + str(result1[0]) + '\n')
+            f.write('single peptide,' + str(hla) + ',' + str(peptide) + ',' + str(result[0]) + ',' + str(result1[0]) + '\n')
     f.close()
     if (opt.file):
-        command = 'perl ' + curDir + '/model/rank.pl ' + WD + '/' + fname + '_predicted_result.txt'
+        command = 'perl ' + curDir + '/model/rank.pl ' + WD + '/' + fname + '_predicted_result.csv'
         os.system(command)
     j = datetime.datetime.now()
     print (str(j) + ' Prediction end\n')
