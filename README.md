@@ -14,11 +14,11 @@ The Installation of Docker (v18.09) can be seen in https://docs.docker.com/
 
 Pull the image of deephlapan from dockerhub:
 
-      sudo docker pull wujingcheng/deephlapan:v1.1  
+      sudo docker pull biopharm/deephlapan:v1.1  
 
 run the image in bash mode:
 
-      sudo docker run -it --rm wujingcheng/deephlapan:v1.1 bash
+      sudo docker run -it --rm biopharm/deephlapan:v1.1 bash
 
 ## 2.Git (All the dependencies should be properly installed)
 
