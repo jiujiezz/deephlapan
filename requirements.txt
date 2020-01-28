@@ -4,5 +4,5 @@ gensim >= 2.3.0
 keras == 2.0.8
 scipy == 1.0.1
 scikit-learn == 0.18
-tensorflow  == 1.15.0
+tensorflow  == 1.15.2
 tensorflow-gpu == 1.15.0
